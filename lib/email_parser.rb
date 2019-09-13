@@ -10,6 +10,6 @@ class EmailParser
   end 
   
   def parse
-    @email_addresses.split(", ")
+    ret = @email_addresses.split(",")
   end 
 end
