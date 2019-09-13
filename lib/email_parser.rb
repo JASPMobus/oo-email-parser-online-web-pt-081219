@@ -15,5 +15,7 @@ class EmailAddressParser
     ret.map do |email_address| 
       email_address.gsub(/,/, "")
     end
+    
+    ret.uniq
   end 
 end
