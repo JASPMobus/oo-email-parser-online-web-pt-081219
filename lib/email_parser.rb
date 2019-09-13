@@ -13,7 +13,7 @@ class EmailAddressParser
     ret = @email_addresses.split(" ")
     
     ret.map do |email_address| 
-      email_address.strip(",")
+      email_address.gsub(/\s+/, "")
     end
   end 
 end
