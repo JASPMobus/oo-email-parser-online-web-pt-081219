@@ -10,10 +10,10 @@ class EmailParser
   end 
   
   def parse
-    ret = @email_addresses.split(",")
+    ret = @email_addresses.split(" ")
     
     ret.map do |email_address| 
-      email_address.strip
+      email_address.strip(",")
     end
   end 
 end
