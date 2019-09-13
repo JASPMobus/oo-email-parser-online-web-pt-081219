@@ -12,6 +12,8 @@ class EmailParser
   def parse
     ret = @email_addresses.split(",")
     
-    
+    ret.map do |email_address| 
+      email_address.strip
+    end
   end 
 end
